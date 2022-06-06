@@ -1,0 +1,1493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/*////////////////// SECTION 1 ////////////////////////////////*/
+
+.mobile-section1 {
+    height: 78px;
+    background-color: rgb(0, 85, 111);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mobile-section1 img{
+    height: 56px;
+    width:132px ;
+    margin-top: 0px;
+    margin-left: 24px;
+}
+
+.mobile-navbar{
+    display: none;
+    position: absolute;
+    height: 204px;
+    width: 100%;
+    transition: 1s;
+    transform: translateY(141px);
+    z-index: 1;
+}
+
+
+
+.mobile-nav1{
+    background-color:rgb(15, 141, 180) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile-nav1 a{
+    width: 100vw;
+    padding: 20px 0;
+    font-size: 16px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.mobile-nav1 .nav1-lastchild{
+   border: none;
+}
+
+.mobile-nav2{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top:16px ;
+  padding-bottom: 10px;
+  gap: 6px;
+    
+}
+
+.mobile-nav2-row1 a{
+ font-size: 12px;
+ font-family: "Avenir";
+ color: rgb(15, 141, 180);
+ text-decoration: none;
+ padding: 0 10px;
+}
+
+
+.mobile-nav2-row2 a{
+ font-size: 12px;
+ font-family: "Avenir";
+ color: rgb(15, 141, 180);
+ text-decoration: none;
+ padding: 0 10px;
+}
+
+.mobile-nav2-row2 button{
+ background-color: rgb(15, 141, 180);  
+ font-size: 9.783px;
+ font-family: "Avenir";
+ color: rgb(255, 255, 255);
+ text-align: right;
+ padding: 0.5rem 1.625rem;
+ border: none; 
+ gap: 1.75rem;  
+ cursor: pointer;    
+}
+
+.hamburger1 {
+ height: 22px;
+ margin: 10px;
+ display: grid;
+ grid-template-rows: repeat(3, 1fr);
+ justify-items: center;
+ transform: translate(66px, -4px);
+ z-index: 120;
+}
+
+.hamburger1 div {
+ background-color: whitesmoke;
+ position: relative;
+ width: 25px;
+ height: 5px;
+ margin-top: 5px;
+ transition: all 0.2s ease-in-out;
+ border-radius: 3px;
+}
+
+#toggle1 {
+ display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+
+ transform: rotate(-45deg);
+ margin-top: 15px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+ 
+ transform: rotate(45deg);
+ margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+         transform: scale(0);
+}
+
+#toggle1:checked ~ .mobile-navbar {
+ display: flex;
+ flex-direction: column;
+ transition: 1s;
+}
+
+.mobile-section1 .s-icon{
+    color: white;
+    width: 30px;
+    height:30px;
+    transform: translateX(50px);
+}
+
+.boxsearch{
+    display: none;
+}
+
+.media-img{
+    display: none;
+}
+
+.media-txt{
+    display: none;
+}
+
+.media-research{
+    display: none;
+}
+
+.language{
+    display: none;
+}
+
+
+
+
+/*//////////////////////////SECTION 2/////////////////////////*/
+.mobile-section2{
+    overflow: hidden;
+    height: 484px;
+}
+
+.slider{
+    max-width:100% ;
+    height: 304px;
+    overflow: hidden;
+}
+
+.slides{
+    width:100% ;
+    height: 304px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 300%;
+    transition: 2s;
+}
+
+.slide-img1{
+    width: 100vw;
+    height: 304px;
+}
+
+.slide-img2{
+    width: 100vw;
+    height:304px;
+}
+  
+.slide-img3{
+    width: 100vw;
+    height: 304px;
+}
+
+.slide-img4{
+    display: none;
+}
+
+.slide-manual{
+    position: absolute;
+    width: 100vw;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid whitesmoke;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 3px;
+}
+
+.manual-btn:hover{
+    background-color: whitesmoke;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0 ;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100vw;
+    
+}
+
+#radio3:checked ~ .first{
+    margin-left: -200vw;
+   
+}
+
+.slide-text{
+    position: absolute;
+    width: 100vw;
+    margin-top: -254px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+
+}
+
+.hr1{
+    background-color:  rgb(209, 213, 101);
+    margin-bottom: 12px; ;
+    width: 192px;
+    height: 3px;
+}
+
+.hr2{
+    background-color:  rgb(209, 213, 101);
+    margin-top: 12px;
+    width: 192px;
+    height: 3px;
+}
+
+.stronger{
+    font-size: 23px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+  
+}
+
+.together{
+    font-size: 29px;
+    font-family: "MBaskerville";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: italic;
+    line-height: 2.016;
+    text-align: left;
+        
+}
+
+.text1{
+    font-size: 20.563px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+       
+      
+}
+
+.dropup-content{
+    display: none;
+}
+
+.dropup-content1{
+    display: none;
+}
+
+.dropup-content2{
+    display: none;
+}
+
+
+
+
+.mini-navbar{
+    width: 100vw;
+    height:180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-btn{
+    width: 100vw;
+    height:60px ;
+    background-color:#65675B ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.drop-img{
+    height: 25px;
+    width: 25px;
+}
+
+.dropbtn{
+    font-size: 21.466px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    line-height: 2.329;
+    text-align: center;  
+      
+}
+
+.img-btn1{
+    width: 100vw;
+    height:60px ;
+    background-color:#E1582A ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.drop-img1{
+    height: 30px;
+    width: 25px;
+}
+
+.dropbtn1{
+    font-size: 21.466px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    line-height: 2.329;
+    text-align: center;  
+      
+}
+
+.img-btn2{
+    width: 100vw;
+    height:60px ;
+    background-color:#00837B ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.drop-img2{
+    height: 25px;
+    width: 25px;
+}
+
+.dropbtn2{
+    font-size: 21.466px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    line-height: 2.329;
+    text-align: center;  
+      
+}
+
+
+
+
+/*/////////////////// SECTION 3 ////////////*/
+
+.mobile-section3{
+    width: 100vw;
+    padding-top: 32px;
+    overflow-y: visible;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1{
+    width:17.5rem;
+}
+
+
+.box1-card1{
+    height:258px;
+    width: 280px;
+    background-image:url('/images/bmc.png') ;
+    background-repeat: no-repeat;
+    background-size:280px 258px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 22px;
+}
+
+.spotlight{
+    font-size: 12px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 2.273;
+    text-align: left;
+            
+}
+
+.spotlight-text{
+    font-size: 26px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;  
+          
+}
+
+.box2-card1{
+    padding-top: 22px;
+    padding-left: 22px ;
+    padding-right: 22px;
+    padding-bottom: 12px;
+    border:1px solid #a9aaa5;
+    z-index: 1;
+}
+
+.box2-paragraph{
+    font-size: 14.603px;
+    font-family: "Avenir";
+    color: rgb(0, 131, 123);
+    line-height: 1.2;
+    text-align: left;         
+}
+
+.learn-more{
+    margin-top: 16px;
+    font-size: 14px;
+    font-family: "Avenir";
+    color: rgb(0, 131, 123);
+    text-align: left;
+  
+}
+
+
+.card2{
+    background-color: #E4E8E8;
+    width: 17.5rem;
+    height: 432px;
+    margin-top:18px ;
+}
+
+.card2-header{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card2-title{
+    margin-left: 22px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-family: "Avenir";
+    color: rgb(0, 131, 123);
+    text-transform: uppercase;
+    align-self: flex-start;
+
+      
+}
+
+.card2-img{
+    width:238px;
+    height:148px ;
+    
+}
+
+.card2-body{
+    margin-top: 18px;
+    margin-left: 22px;
+    margin-right: 11px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.card2-body a{
+    text-decoration: none;
+    font-size: 14.487px;
+    font-family: "Avenir";
+    color: rgb(0, 131, 123);
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.border{
+    color: white;
+    width: 100vw;
+    transform: translateX(-47px);
+}
+
+
+
+.desktop-card1{
+    display: none;
+}
+
+.desktop-card2{
+    display: none;
+}
+
+.desktop-card3{
+    display: none;
+}
+
+
+
+/*////////////////////// SECTION 3 /////////////////////*/
+
+
+.mobile-section4{
+    overflow: hidden;
+    height: 204px;
+    margin-top: 30px;
+}
+
+.footer{
+    overflow: hidden;
+    height: 164px;
+    background-color:#00556F ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons{
+    display: flex;
+    gap: 10px;
+    margin-top:24px;
+}
+
+.social-icons div{
+    display: flex;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.social-icons div:first-child{
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+
+
+ .copyrights{
+     margin-top: 32px;
+     text-align: center;
+ }
+
+ .row-lastchild{
+     text-decoration: none;
+     font-size: 13px;
+     font-family: "Avenir";
+     color: rgb(255, 255, 255);
+     line-height: 1.2;
+     text-align: center;   
+        
+ }
+
+ .copyrights p{
+    font-size: 13px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;   
+       
+ }
+
+ .desktop-footer, .row{
+     display:none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1300px){
+
+/*////////////////////////MEDIA SECTION1/////////////////////*/
+
+      .hamburger1{
+          display: none;
+      }
+
+      .header-img{
+          display:none;
+      }
+
+      .mobile-section1{
+          height: 174px;
+          background-color: white;
+      }
+
+      .mobile-navbar{
+          display: flex;
+          flex-direction: column;
+          transform: translateY(0px);
+          height: 174px;
+      }
+
+      .mobile-nav1{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          order: 1;
+          height: 7.25rem;
+          max-width: 100vw; 
+             
+      }
+
+
+
+      .mobile-nav1 a{
+        padding: 2.625rem 4.875rem;
+        text-decoration: none;
+        text-align: center;
+        border-right:1px solid white ;
+        font-size: 1.0759375rem;
+        font-family: "Avenir";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        border-bottom: none;
+        height: 7.25rem;
+        padding-top:38px;
+      }
+
+      .mobile-nav1 a:hover{
+          height: 7.25rem;
+          
+          background-color: rgb(135, 198, 218);
+      }
+
+      #programs{
+        padding-top: 28px;
+      }
+
+      
+
+      .mobile-nav2{
+          height: 58px;
+          display: flex;
+          flex-direction: row;
+          order: 0;
+          margin-bottom: 12px;
+          gap: 2px;
+      }
+
+
+      .mobile-nav2-row2{
+         padding-right:22px ;
+      }
+
+      .boxsearch{
+            width:18.5rem;
+            height: 2.375rem;
+            border: 2px rgb(15, 141, 180) solid;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 2px;
+      }
+
+      .input{
+        border: none;
+        padding-top:0.25rem;
+        padding-bottom: 0.25rem;
+        line-height: 1.875rem;
+        outline: none;
+        background: none;
+        padding-left: 0.25rem ;
+      font-size: 17.603px;
+        font-family: "Avenir";
+        color: rgb(15, 141, 180);
+        
+    }
+    
+    .input::placeholder{
+        font-size: 17.603px;
+        font-family: "Avenir";
+        color: rgb(15, 141, 180);
+        
+        text-align: left;  
+        
+    }
+    
+    .mobile-section1 .s-icon{
+    transform: translateY(10px);
+    width: 0.9375rem;
+    height: 0.9375rem;
+    }
+
+    .mobile-navbar .nav1-lastchild{
+        margin-right: 270px;
+        border-right:1px solid white ;
+    }
+
+    .hospital-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.125rem 4.5rem;
+        height: 100%;
+        background-color: rgb(0, 85, 111);
+        margin-left: 270px;
+    }
+
+      .media-img{
+        display: inline-block;
+    }
+    
+    .media-txt{
+        display: inline-block;
+    }
+    
+    .mobile-nav1{
+        height: 7.25rem;
+        padding: 0 100px;
+    }
+
+    .language{
+        display: flex;
+        gap: 0.5rem;
+    }
+    
+    .language-text{
+        font-size: 0.75rem;
+        font-family: "Avenir";
+        color: rgb(15, 141, 180);
+        align-self: center;
+    }
+
+    .mobile-section1 .language-flag{
+        width: 30px;
+        height: 20px;
+    }
+    
+    
+
+
+
+/*/////////////////////// MEDIA SECTION2 ////////////////////*/
+.slide-img1{
+    display: none;
+}
+
+.mobile-section2{
+    height: 41.5rem;
+}
+
+.slider{
+    max-width:100% ;
+    height: 664px;
+    overflow: hidden;
+}
+
+.slides{
+    width:100% ;
+    height: 664px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 300%;
+    transition: 2s;
+}
+
+.slide-text{
+    position: absolute;
+    width: 100vw;
+    margin-top: -454px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hr1{
+    background-color:  rgb(209, 213, 101);
+    margin-bottom: 28px; ;
+    width: 292px;
+    height: 3px;
+}
+
+.hr2{
+    background-color:  rgb(209, 213, 101);
+    margin-top: 28px;
+    width: 292px;
+    height: 3px;
+}
+
+.stronger{
+    font-size: 23px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.898;
+    text-align: center;
+  
+}
+
+.together{
+    font-size: 29px;
+    font-family: "MBaskerville";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.016;
+    text-align: left;
+        
+}
+
+.text1{
+    font-size: 23.563px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+       
+      
+}
+
+.slide-img4{
+    display: inline-block;
+    width: 100vw;
+    height:664px;
+}
+
+.slide-img2{
+    width: 100vw;
+    height:664px;
+}
+  
+.slide-img3{
+    width: 100vw;
+    height:664px;
+}
+
+
+.slide-manual{
+    position: absolute;
+    width: 100vw;
+    margin-top: -105px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 5px;
+}
+
+.manual-btn:hover{
+    background-color: whitesmoke;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0 ;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100vw;
+    
+}
+
+#radio3:checked ~ .first{
+    margin-left: -200vw;
+   
+}
+
+
+
+
+.mini-navbar{
+    height: 6rem;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap :3px;
+    transform: translatey(-12px);
+}
+
+.img-btn{
+    background-color: rgb(101, 103, 91);
+    width: 24.875rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.dropbtn {
+   
+    font-size: 25.487px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    line-height: 1.962;
+    text-align: center;
+    align-self: center;
+    
+  }
+
+  .drop-img{
+    width: 30px;
+    height: 30px;
+    align-self: center;
+  
+}
+
+.dropup {
+    position: relative;
+    display: flex;
+  }
+
+  .dropup-content {
+    display: none;
+    position: absolute;
+   /* bottom: 96px;*/
+    bottom: 0;
+    background-color: rgb(101, 103, 91);
+    min-width: 24.875rem;
+    height: 490px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropup-content a {
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    width: 18.5rem;
+    height: 2.25rem;
+    margin: 0 auto;
+    margin-top: 11px;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropup:hover .dropup-content {
+    display: block;
+    
+  }
+
+  .dropup:hover .img-btn {
+    background-color: rgb(101, 103, 91);
+    transform: translateY(-480px);
+    transition: 0.1s;
+  }
+
+
+  .img-btn1{
+    background-color:  rgb(225, 88, 42);
+    width: 24.875rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.dropbtn1 {
+   
+    font-size: 25.487px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    line-height: 1.962;
+    text-align: center;
+    align-self: center;
+    
+  }
+
+  .drop-img1{
+    width: 30px;
+    height: 40px;
+    align-self: center;
+  
+}
+
+.dropup1 {
+    position: relative;
+    display: flex;
+  }
+
+  .dropup-content1 {
+    display: none;
+    position: absolute;
+   /* bottom: 96px;*/
+    bottom: 0;
+    background-color: rgb(225, 88, 42);
+    min-width: 24.875rem;
+    
+    height: 296px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropup-content1 .content1 {
+    background-color:rgb(225, 88, 42);
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    width: 18.5rem;
+    height: 2.25rem;
+    margin: 0 auto;
+    margin-top: 11px;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropup-content1 .content2 {
+    background-color:rgb(225, 88, 42);
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    width: 18.5rem;
+    height: 2.25rem;
+    margin: 0 auto;
+    margin-top: 11px;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content1::placeholder, .content2::placeholder{
+      color: whitesmoke;
+  }
+
+  .dropup-content1 .content3{
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+        color: whitesmoke;
+  }
+
+  .input-p{
+      display: flex;
+      align-items: center;
+      margin: 0 25px;
+      gap: 5px;
+      color: whitesmoke;
+  }
+
+
+
+  .btn-submit{
+      margin-top: 10px;
+      margin-left:82px ;
+      width: 14.125rem;
+      height: 46px;
+      background-color: whitesmoke;
+      color: rgb(225, 88, 42);
+      font-size: 14px;
+      font-family: "Avenir";
+      text-transform: uppercase;
+      border: none;
+      border-radius: 5px;
+       cursor: pointer;
+      
+  }
+
+  .dropup1:hover .dropup-content1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .dropup1:hover .img-btn1 {
+    background-color:rgb(225, 88, 42) ;
+    transform: translateY(-280px);
+    transition: 0.1s;
+  }
+
+
+  .img-btn2{
+    background-color: rgb(0, 131, 123);
+    width: 24.875rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.dropbtn2 {
+   
+    font-size: 25.487px;
+    font-family: "Avenir";
+    color: rgb(255, 255, 255);
+    line-height: 1.962;
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    
+  }
+
+  .drop-img2{
+      width: 30px;
+      height: 30px;
+      align-self: center;
+    
+  }
+  
+  /* The container <div> - needed to position the dropup content */
+  .dropup2 {
+    position: relative;
+    display: flex;
+  }
+  
+  /* Dropup content (Hidden by Default) */
+  .dropup-content2 {
+    display: none;
+    position: absolute;
+   /* bottom: 96px;*/
+    bottom: 0;
+    background-color: rgb(0, 131, 123);
+    min-width: 24.875rem;
+    height: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropup */
+  .dropup-content2 a {
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    width: 18.5rem;
+    height: 2.25rem;
+    margin: 0 auto;
+    margin-top: 11px;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  /* Change color of dropup links on hover */
+  
+  
+  /* Show the dropup menu on hover */
+  .dropup2:hover .dropup-content2 {
+    display: block;
+    
+  }
+  
+  /* Change the background color of the dropup button when the dropup content is shown */
+  .dropup2:hover .img-btn2 {
+    background-color:rgb(0, 131, 123) ;
+    transform: translateY(-340px);
+    transition: 0.1s;
+  }
+
+
+
+
+
+  /*////////////////////MEDIA SECTION 3////////////////////*/
+
+  .card1{
+      display: none;
+  }
+
+  .desktop-card1{
+    margin-top: 184px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .story-title{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-family: "Avenir";
+    color: rgb(32, 21, 68);
+   
+}
+
+.stories{
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+
+.adkins-story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lee-story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.family-name{
+    font-size: 28px;
+    font-family: "MBaskerville";
+    color: rgb(32, 21, 68);
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 40px;
+    padding-bottom: 26px;
+    border-bottom: 2px solid rgb(209, 213, 101);
+}
+
+.family-text{
+    font-size: 21.463px;
+    font-family: "Avenir";
+    text-align: center;
+    color: rgba(32, 21, 68, 0.902);
+    padding-top:26px ;
+}
+
+
+
+.card2{
+    display: none;
+}
+
+.desktop-card2{
+    height: 418px;
+    display: flex;
+    justify-content: center;
+    margin-top: 88px;
+}
+
+.bmc{
+    
+    display: flex;
+    justify-content: center;
+    width: 59.375rem;
+}
+
+.bmc-text{
+   padding: 30px;
+   background-color:rgb(209, 213, 101); 
+}
+
+.bmc-text-title{
+    font-size: 21.694px;
+    font-family: "Myriad Pro";
+    color: rgb(5, 5, 5);
+    line-height: 1.2;
+    text-align: left;    
+}
+
+.bmc-text-paragraph{
+    font-size: 13.668px;
+    font-family: "Myriad Pro";
+    color: rgb(5, 5, 5);
+    line-height: 1.2;
+    text-align: left;    
+              
+}
+.bmc img{
+    width: 100vw;
+}
+
+
+.desktop-card3{
+    height: 400px;
+    margin-top: 86px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-title{
+    margin: 0 auto;
+    margin-bottom: 56px;
+    font-size: 24px;
+    font-family: "Avenir";
+    color: rgb(32, 21, 68);
+       
+}
+
+.news{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.news p{
+    padding-top: 28px;
+    text-align: center;
+    font-size: 21.463px;
+    font-family: "Avenir";
+    color: rgba(32, 21, 68, 0.902);
+           
+}
+
+
+
+/*///////////////////////// MEDIA SECTION 4//////////////*/
+
+.footer{
+    display: none;
+}
+
+
+.desktop-footer{
+    height: 662px;
+    background-color: rgba(150, 151, 151, 0.251);
+   /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;*/
+    display: flex;
+    justify-content: center;
+    margin-top: -250px;
+    padding-top: 82px;
+    gap: 66px;
+    
+}
+
+.column-1, .column-2, .column-3, .column-4{
+    width: 13.375rem;
+}
+
+.p1-title{
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+
+.logo2{
+   margin-bottom: 36px;
+}
+
+.column-1 p{
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgb(32,21,68);
+    line-height: 1.267;
+    text-align: left;
+      
+}
+
+.social-icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 56px;
+}
+
+.social-icons div{
+    display: flex;
+    align-items: center;
+    color: blue;
+    border: 1px solid rgb(32,21,68);
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.social-icons div:first-child{
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.column-1 p span{
+    font-weight: 600;
+}
+
+
+.column-2 .p1{
+    padding-bottom: 36px ;
+}
+
+.column-3 .p1{
+    padding-bottom: 36px;
+}
+
+.p1 p{
+    padding-bottom: 5px;
+}
+
+.column-4 p{
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-52px);
+    
+  }
+  
+  .row a{
+    border-right: 2px solid rgb(32,21,68);
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    font-size: 17.612px;
+    font-family: "Avenir";
+    color: rgb(32,21,68);
+    line-height: 1.2;
+    text-align: center;
+   
+  }
+  
+  .row .row-lastchild{
+      border: none;
+  }
+  
+
+}
