@@ -11,7 +11,7 @@ body{
 
 /*////////////////// SECTION 1 ////////////////////////////////*/
 
-.mobile-section1 {
+.mobile__section1 {
     height: 78px;
     background-color: rgb(0, 85, 111);
     display: flex;
@@ -19,14 +19,14 @@ body{
     overflow: hidden;
 }
 
-.mobile-section1 img{
+.mobile__section1__header__img{
     height: 56px;
     width:132px ;
     margin-top: 0px;
     margin-left: 24px;
 }
 
-.mobile-navbar{
+.mobile__navbar{
     display: none;
     position: absolute;
     height: 204px;
@@ -38,7 +38,7 @@ body{
 
 
 
-.mobile-nav1{
+.mobile__navbar__blue{
     background-color:rgb(15, 141, 180) ;
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ body{
     text-align: center;
 }
 
-.mobile-nav1 a{
+.mobile__navbar__blue a{
     width: 100vw;
     padding: 20px 0;
     font-size: 16px;
@@ -57,11 +57,11 @@ body{
     border-bottom: 2px solid whitesmoke;
 }
 
-.mobile-nav1 .nav1-lastchild{
+.mobile__navbar__blue .mobile__navbar__blue__lastchild{
    border: none;
 }
 
-.mobile-nav2{
+.mobile__navbar__white{
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@ body{
     
 }
 
-.mobile-nav2-row1 a{
+.mobile__navbar__white--row1 a{
  font-size: 12px;
  font-family: "Avenir";
  color: rgb(15, 141, 180);
@@ -82,7 +82,7 @@ body{
 }
 
 
-.mobile-nav2-row2 a{
+.mobile__navbar__white--row2 a{
  font-size: 12px;
  font-family: "Avenir";
  color: rgb(15, 141, 180);
@@ -90,7 +90,7 @@ body{
  padding: 0 10px;
 }
 
-.mobile-nav2-row2 button{
+.mobile__navbar__white--row2 button{
  background-color: rgb(15, 141, 180);  
  font-size: 9.783px;
  font-family: "Avenir";
@@ -102,7 +102,7 @@ body{
  cursor: pointer;    
 }
 
-.hamburger1 {
+.mobile__section1__hamburger {
  height: 22px;
  margin: 10px;
  display: grid;
@@ -112,7 +112,7 @@ body{
  z-index: 120;
 }
 
-.hamburger1 div {
+.mobile__section1__hamburger div {
  background-color: whitesmoke;
  position: relative;
  width: 25px;
@@ -126,48 +126,48 @@ body{
  display: none;
 }
 
-#toggle1:checked + .hamburger1 .top {
+#toggle1:checked + .mobile__section1__hamburger .top {
 
  transform: rotate(-45deg);
  margin-top: 15px;
 }
 
-#toggle1:checked + .hamburger1 .meat {
+#toggle1:checked + .mobile__section1__hamburger .meat {
  
  transform: rotate(45deg);
  margin-top: -5px;
 }
 
-#toggle1:checked + .hamburger1 .bottom {
+#toggle1:checked + .mobile__section1__hamburger .bottom {
          transform: scale(0);
 }
 
-#toggle1:checked ~ .mobile-navbar {
+#toggle1:checked ~ .mobile__navbar {
  display: flex;
  flex-direction: column;
  transition: 1s;
 }
 
-.mobile-section1 .s-icon{
+.mobile__section1 .mobile__section1__search__icon{
     color: white;
-    width: 30px;
-    height:30px;
-    transform: translateX(50px);
+    width: 25px;
+    height:25px;
+    transform: translateX(65px);
 }
 
 .boxsearch{
     display: none;
 }
 
-.media-img{
+.media__img{
     display: none;
 }
 
-.media-txt{
+.media__txt{
     display: none;
 }
 
-.media-research{
+.media__research{
     display: none;
 }
 
@@ -646,27 +646,27 @@ body{
 
 /*////////////////////////MEDIA SECTION1/////////////////////*/
 
-      .hamburger1{
+      .mobile__section1__hamburger{
           display: none;
       }
 
-      .header-img{
+      .mobile__section1__header__img{
           display:none;
       }
 
-      .mobile-section1{
+      .desktop__section1{
           height: 174px;
           background-color: white;
       }
 
-      .mobile-navbar{
+      .desktop__navbar{
           display: flex;
           flex-direction: column;
           transform: translateY(0px);
           height: 174px;
       }
 
-      .mobile-nav1{
+      .desktop__navbar__blue{
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -679,7 +679,7 @@ body{
 
 
 
-      .mobile-nav1 a{
+      .desktop__navbar__blue a{
         padding: 2.625rem 4.875rem;
         text-decoration: none;
         text-align: center;
@@ -693,7 +693,7 @@ body{
         padding-top:38px;
       }
 
-      .mobile-nav1 a:hover{
+      .desktop__navbar__blue a:hover{
           height: 7.25rem;
           
           background-color: rgb(135, 198, 218);
@@ -705,7 +705,7 @@ body{
 
       
 
-      .mobile-nav2{
+      .desktop__navbar__white{
           height: 58px;
           display: flex;
           flex-direction: row;
@@ -715,7 +715,7 @@ body{
       }
 
 
-      .mobile-nav2-row2{
+      .desktop__navbar__white--row1{
          padding-right:22px ;
       }
 
@@ -729,7 +729,7 @@ body{
             margin-left: 2px;
       }
 
-      .input{
+      .boxsearch__input{
         border: none;
         padding-top:0.25rem;
         padding-bottom: 0.25rem;
@@ -743,7 +743,7 @@ body{
         
     }
     
-    .input::placeholder{
+    .boxsearch__input::placeholder{
         font-size: 17.603px;
         font-family: "Avenir";
         color: rgb(15, 141, 180);
@@ -752,18 +752,18 @@ body{
         
     }
     
-    .mobile-section1 .s-icon{
+    .desktop__search__icon{
     transform: translateY(10px);
     width: 0.9375rem;
     height: 0.9375rem;
     }
 
-    .mobile-navbar .nav1-lastchild{
+    .desktop-navbar .desktop__navbar__blue__lastchild{
         margin-right: 270px;
         border-right:1px solid white ;
     }
 
-    .hospital-img{
+    .desktop__navbar__blue__hospital__img{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -773,15 +773,17 @@ body{
         margin-left: 270px;
     }
 
-      .media-img{
+    .media__img{
+        display: inline-block;
+    }
+
+      
+    
+    .media__txt{
         display: inline-block;
     }
     
-    .media-txt{
-        display: inline-block;
-    }
-    
-    .mobile-nav1{
+    .desktop__navbar__blue{
         height: 7.25rem;
         padding: 0 100px;
     }
@@ -791,14 +793,14 @@ body{
         gap: 0.5rem;
     }
     
-    .language-text{
+    .language__text{
         font-size: 0.75rem;
         font-family: "Avenir";
         color: rgb(15, 141, 180);
         align-self: center;
     }
 
-    .mobile-section1 .language-flag{
+    .desktop__section1 .language__flag{
         width: 30px;
         height: 20px;
     }
